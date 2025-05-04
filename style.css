@@ -1,0 +1,103 @@
+/* General styles */
+body {
+    background-color: rgb(255,82,0); /* Vibrant orange background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white; /* Default text color for readability */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(255,82,0); /* Matches website theme */
+}
+
+header .logo img {
+    filter: brightness(0) invert(1); /* Makes the logo white */
+    max-height: 50px;
+}
+
+header ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 32px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white; /* Links are white to match the theme */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #ffe5d6; /* Slightly lighter hover effect */
+}
+
+/* Main content styles */
+main {
+    flex: 1; /* Ensures the main section stretches to fill available space */
+    text-align: center;
+    padding: 20px;
+    background: url('bg1.png') left center no-repeat, url('bg2.png') right center no-repeat; /* Two images */
+    background-color: rgb(255,82,0); /* Matches theme */
+    background-size: contain, contain; /* Images fit within their respective areas */
+    color: white; /* Text remains readable */
+}
+
+main p {
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    padding-left: 12px;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 56px;
+}
+
+main input[type="text"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    background-color: white; /* Input fields background */
+    color: rgb(255,82,0); /* Text inside the input field */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(255,82,0); /* Matches theme */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
